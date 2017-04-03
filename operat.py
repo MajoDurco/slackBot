@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from bots.chatty import bot_chatty as chatty
-from bots.herbie import bot_herbie as herbie
+from bots.c_3po import bot_c_3po as c_3po
 from bots.clever import bot_clever as clever
 from constants import (NO_BOT, SPECIFY_BOT, HELP_MSG, LIST,
                        START_SESSION, END_SESSION)
@@ -16,7 +16,7 @@ class Operator(object):
     '''
     def __init__(self):
         self.bots = {'chatty': chatty,
-                     'herbie': herbie,
+                     'c_3po': c_3po,
                      'clever': clever}
         self.active_bot = None
 
