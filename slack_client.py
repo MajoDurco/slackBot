@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-
+import os
 import time
 
 from slackclient import SlackClient
@@ -8,7 +8,7 @@ from operat import Operator
 
 
 AT_BOT = '@tellme'
-slack_client = SlackClient('xoxb-159814680723-l0b4SDAucZcqqIXiK6888Tz7')
+slack_client = SlackClient(os.environ.get('SLACK_BOT_TOKEN'))
 operator = Operator()
 
 
